@@ -1,0 +1,50 @@
+<config>
+    <modules>
+        <Brideo_Amazon>
+            <version>0.0.1</version>
+        </Brideo_Amazon>
+    </modules>
+    <global>
+        <models>
+            <amazon>
+                <class>Brideo_Amazon_Model</class>
+            </amazon>
+        </models>
+        <helpers>
+            <amazon>
+                <class>Brideo_Amazon_Helper</class>
+            </amazon>
+        </helpers>
+    </global>
+    <adminhtml>
+            <acl>
+                <resources>
+                    <admin>
+                        <children>
+                            <system>
+                                <children>
+                                    <config>
+                                        <children>
+                                            <amazon translate="title" module="amazon">
+                                                <title>ACL Name for my section</title>
+                                            </amazon>
+                                        </children>
+                                    </config>
+                                </children>
+                            </system>
+                        </children>
+                    </admin>
+                </resources>
+            </acl>
+    </adminhtml>
+    <crontab>
+        <jobs>
+            <brideo_amazon>
+                <schedule><cron_expr>0 1 * * *</cron_expr></schedule>
+                <run>
+                    <model>amazon/s3::prepareBackup</model>
+                </run>
+            </brideo_amazon>
+        </jobs>
+    </crontab>
+</config>

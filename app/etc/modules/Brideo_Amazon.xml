@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Brideo_Amazon>
+            <codePool>local</codePool>
+            <active>true</active>
+        </Brideo_Amazon>
+    </modules>
+</config>
