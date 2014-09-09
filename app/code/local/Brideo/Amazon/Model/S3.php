@@ -54,7 +54,7 @@ class Brideo_Amazon_Model_S3 extends Mage_Core_Model_Abstract {
 
     private function _saveName($file) {
         $array = explode('/', $file);
-        return end($array);
+        return str_replace('.gz','.sql.gz',end($array));
     }
 
 }

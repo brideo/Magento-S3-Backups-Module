@@ -62,8 +62,3 @@ I have set up this module to run at 1am by default as this is when our website a
 Find the line which represents the cron expression and edit it to suit your needs;
 
 	<schedule><cron_expr>0 1 * * *</cron_expr></schedule>
-
-
-##Side Note:
-
-When I unzip the files I need to put .sql on the end for them to work, you can tamper with the code to fix this but I haven't bothered.
