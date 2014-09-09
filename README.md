@@ -15,7 +15,7 @@ If you haven't setup the Magento Cron's to run you will need to do this. I am us
 
 Now add this:
 
-	*/5 * * * * /bin/sh /var/www/html/www/simplybarstools/cron.sh
+	*/5 * * * * /bin/sh /path/to/your/magento/installation/cron.sh
 This will mean the Magento crons are hit every 5 minutes.
 
 ##Adding the Amazon S3 Library
