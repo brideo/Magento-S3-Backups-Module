@@ -1,4 +1,3 @@
-
 ##Introduction
 
 Unfortunately lower versions of Magento don't actually have the feature to automate you databases backups, I believe they introduced this in Magento 1.7.
@@ -16,29 +15,16 @@ If you haven't setup the Magento Cron's to run you will need to do this. I am us
 Now add this:
 
 	*/5 * * * * /bin/sh /path/to/your/magento/installation/cron.sh
+	
 This will mean the Magento crons are hit every 5 minutes.
 
-##Adding the Amazon S3 Library
+##Amazon S3 Library
 
 So Donovan Schönknecht, or Typo, has made a really great Amazon S3 PHP Class we can add to our Magento Lib folder. To find this please see his [Amazon S3 PHP Class Github](https://github.com/tpyo/amazon-s3-php-class) page, you will need to download S3.php from there.
 
-Once you have done this you will need to add the file to your Magento installation:
+##Installation
 
-	lib/Amazon/S3.php
-
-I have put it in an 'Amazon' directory, you may want to name it 'Typo' or 'Undesigned' but that is up to you, just take a not for when you require this lib later.
-
-##Adding The Magento Module
-
-All the files can be found on my GitHub, however I will go through each step in this post. I have used a local code pool setup, feel free to change this to community.
-
-The files we will be adding are:
-
-	app/etc/Brideo_Amazon.xml
-	app/code/local/Brideo/Amazon/etc/config.xml
-	app/code/local/Brideo/Amazon/etc/system.xml
-	app/code/local/Brideo/Amazon/Block/S3.php
-	app/code/local/Brideo/Amazon/Helper/Data.php
+	modman clone git@github.com:tpyo/amazon-s3-php-class.git
 
 ##Setting Up The Configuration
 
