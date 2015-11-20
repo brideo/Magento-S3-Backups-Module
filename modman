@@ -1,0 +1,3 @@
+lib/Amazon/S3.php lib/Amazon/S3.php
+app/etc/Brideo_Amazon.xml app/etc/Brideo_Amazon.xml
+app/code/local/Brideo/Amazon/ app/code/local/Brideo/Amazon/
