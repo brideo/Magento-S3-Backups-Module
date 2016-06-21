@@ -1,3 +1,5 @@
+#This module is deprecated, I don't recommend using it. 
+
 ##Introduction
 
 Unfortunately lower versions of Magento don't actually have the feature to automate you databases backups, I believe they introduced this in Magento 1.7.
