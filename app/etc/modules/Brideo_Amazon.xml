@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Brideo_Amazon>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
             <active>true</active>
         </Brideo_Amazon>
     </modules>

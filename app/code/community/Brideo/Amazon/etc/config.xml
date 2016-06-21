@@ -1,7 +1,7 @@
 <config>
     <modules>
         <Brideo_Amazon>
-            <version>0.0.1</version>
+            <version>1.0.1</version>
         </Brideo_Amazon>
     </modules>
     <global>
