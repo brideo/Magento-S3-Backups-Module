@@ -1,0 +1,23 @@
+<config>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <amazon translate="title" module="brideo_amazon">
+                                            <title>Brideo Amazon Backup Module</title>
+                                        </amazon>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>
