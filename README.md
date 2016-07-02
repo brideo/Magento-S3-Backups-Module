@@ -38,7 +38,7 @@ You can get your **Amazon Access Key**  and **Amazon Secret Key** from the Amazo
 
 Ideally you don't want to be waiting around for a cron job to run to test your  backups are syncing. To manually test the backup you will need to call the function which initiates the backups, this can be run from any page and should be done in a development environment.
 
-	Mage::getModel('amazon/s3')->prepareBackup();
+	Mage::getModel('brideo_amazon/s3')->prepareBackup();
 
 
 ##Changing The Time Which The Backup Runs
